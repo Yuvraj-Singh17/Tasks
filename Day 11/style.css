@@ -1,0 +1,47 @@
+@font-face {
+    font-family: next;
+    src: url(font.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(image.png);
+    background-position: top;
+    background-size: cover;
+    text-align: right;
+}
+h1{
+    font-family: next;
+    padding-top: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    font-weight: 350;
+}
+button{
+    margin-top: 220px;
+    margin-right: 120px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+p{
+    font-size: 10px;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+button:hover {
+  background: white;
+}

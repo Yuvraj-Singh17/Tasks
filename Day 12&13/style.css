@@ -1,0 +1,85 @@
+@font-face {
+    font-family: cars;
+    src: url(Rockybilly.ttf);
+}
+@font-face {
+    font-family: supercars;
+    src: url(Raceline\ Demo.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main{
+    width: 100%;
+    background: linear-gradient(135deg, #121212, #2a2a2a);
+}
+
+#nav{
+    padding: 20px;
+    text-align: center;
+}
+
+#nav a{
+    text-decoration: none;
+    padding: 10px 100px;
+    color: rgba(255,255,255,0.85);
+}
+
+#main h1{
+    text-align: center;
+    font-size: 150px;
+    font-family: cars;
+    padding-bottom: 200px;
+    color: #b0b7c3  ;
+}
+#main img{  
+    height: 300px;
+    position: absolute;
+}
+
+#main #first{
+    right: 20%;
+    bottom: 5%;
+}
+#main #second{
+    right: 32%;
+    top: 80%;
+}
+#main #third{
+    left: 40%;
+    top: 70%;
+}
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 50px;
+    font-size: 25px;
+    background-color: #f4f4f5;
+}
+#bottom a{
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+#main #side{
+    padding-left: 20px ;
+    color: #9ca3af;
+    height: 200px;
+    width: 200px;
+}
+#side p{
+    padding-top: 15px;
+}
+#side h3{
+    font-size: 20px;
+    font-weight: 600;
+}
