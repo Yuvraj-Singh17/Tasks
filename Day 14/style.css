@@ -248,3 +248,9 @@ html, body {
     border-radius: 5px;
     font-size: 18px;
 }
+.nav-line {
+  width: calc(100% - 400px);  
+  height: 1px;
+  margin: 0 auto;            
+  background-color:white;
+}
