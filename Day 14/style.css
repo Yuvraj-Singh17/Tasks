@@ -1,0 +1,250 @@
+@font-face {
+    font-family: BMW;
+    src: url(BMWTypeNext-Light.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: BMW;
+}
+#main{
+     background-image: url(Hero\ Image.webp);
+     background-position: center;
+     background-size: cover;
+     height: 100%;
+}
+#nav{
+    display:flex;
+    justify-content: space-between;
+}
+#nav #lnav{
+    color: white;
+    padding-right: 60px;
+}
+#nav #rnav a{
+    color: white;
+    text-decoration: none;
+}
+#nav{
+    padding: 20px;
+}
+#lnav , #rnav{
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 800
+    ;
+}
+#nav #rnav a{
+    padding-top: 15px;
+}
+#nav #rnav{
+    padding-left: 60px;
+}
+#nav #rnav img{
+    height: 60px;
+}
+#nav #lnav i{
+    padding-top: 15px;
+}
+#main #b{
+    height: 50px;
+    width: 200px;
+    background-color: #1C69D4;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+#second{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+#h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+}
+#second div i{
+    font-size: 100px;
+    font-weight: lighter;
+}
+#second div h3{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+#second div button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#second{
+    margin-bottom: 50px;
+}
+#third{
+    position: relative;
+    background-image: linear-gradient(to right, black, transparent),url(image3.png);
+    width:100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#third h1{
+    position: absolute;
+    left: 5%;
+    color: white;
+    bottom: 35%;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+#third h3{
+    position: absolute;
+    left: 5%;
+    bottom: 30%;
+    font-weight: 100;
+}
+#third #b1{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 130px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#fourth{
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(to right, black, transparent),url(image4.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+#fourth #h3a{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 20px;
+     font-weight: 100;
+}
+#fourth h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 300px;
+    font-weight: 200;
+}
+#fourth #h3b{
+    position:absolute;
+    bottom: 25%;
+    left: 5%;
+     font-weight: 100;
+}
+#fourth button{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    color: white;
+    background: linear-gradient(to right , black , transparent);
+    border: 1px solid white;
+    padding: 15px 130px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#fifth{
+    width: 100%;
+    height: 60%;
+    background:linear-gradient(to right , black , transparent) , url(image5.png);
+    color: white;
+    position:relative;
+    margin-bottom: 50px;
+}
+#fifth #h3A{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+     font-weight: 100;
+}
+#fifth h1{
+    position:absolute;
+    left: 5%;
+    top: 20%;
+    font-size: 200px;
+}
+#fifth #h3B{
+    position: absolute;
+    left: 5%;
+    bottom: 22%;
+     font-weight: 100;
+}
+#fifth #h3C{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    font-weight: 100;
+}
+#fifth button{
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    color: white;
+    background: linear-gradient(to right , black , transparent);
+    border: 1px solid white;
+    padding: 15px 130px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+#sixth{
+    display: flex;
+    position:relative;
+}
+#sixth img{
+    width: 50%;
+    padding: 50px;
+}
+#sixth #p1{
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    font-size: 30px;
+}
+#sixth #p2{
+    position:absolute;
+    right: 28.5%;
+    top: 48%;
+    width: 300px;
+    font-size: 20px;
+}
+#sixth button{
+    position: absolute;
+    right: 40.7%;
+    bottom: 22%;
+    color: black;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 18px;
+}
