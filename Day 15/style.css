@@ -1,0 +1,257 @@
+@font-face {
+    font-family: f1;
+    src: url(./Fonts/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+@font-face {
+    font-family: f2;
+    src: url(./Fonts/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+@font-face {
+    font-family: f3;
+    src: url(./Fonts/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: f1;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+}
+#nav #navleft{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nav #navcenter{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nav #navright{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search {
+     padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    background: #F3F3F6;
+    border-radius: 30px;
+}
+#nav form input {
+    width: 260px;
+    padding: 15px 16px;
+    border: none;
+    background-color: #F3F3F6;
+    border-radius: 25px;
+    outline: none;
+}
+#nav #navleft #box{
+    font-size: 20px;
+    color: white;
+    background: #EA4C89;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+#nav #navleft .search #shot{
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+#nav #navcenter{
+    display:flex;
+    gap: 25px;
+}
+#nav #navcenter h3{
+    
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#nav #navright{
+    display: flex;
+    gap: 30px;
+}
+#nav #navright i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#nav #navright span{
+    border-radius: 50%;
+    background: linear-gradient(black,aqua);
+    padding: 15px 18px;
+    color: white;
+    cursor: pointer;
+}
+#nav #navright button{
+    padding: 12px 22px;
+    border-radius: 25px;
+    border: 0.5px solid rgb(178, 174, 174);
+    font-weight: 600;
+    cursor: pointer;
+}
+#nav #navright #f{
+    background: black;
+    color: white;
+}
+
+
+#body{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+#body #left{
+    padding-top: 40px;
+    padding-left: 70px;
+}
+#body #left img{
+    border-radius: 50%;
+    height: 80px;
+}
+#body #left h3{
+    padding-top: 20px;
+    font-size: 30px;
+}
+#body #left h1{
+    padding-top: 20px;
+    font-size: 45px;
+}
+#body #left #inner{
+    padding-top: 20px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+#body #left #inner h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+}
+#body #left button{
+    border:1px solid rgb(178, 174, 174);
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+#body #right{
+    object-fit: cover;
+}
+#belowbody{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#belowbody #leftbelow{
+    padding-left: 70px;
+    display: flex;
+    gap: 25px;
+}
+#belowbody #leftbelow button{
+    border: none;
+    font-weight: 600;
+    background: white;
+}
+#belowbody #rightbelow{
+    padding-right: 70px;
+}
+#belowbody #rightbelow button{
+    padding: 6px 20px;
+    font-weight: 700;
+    border: 1px solid #b2aeae;
+    background-color: white;
+}
+.nav-line {
+  width: calc(100% - 120px);  
+  height: 1px;
+  margin: 0 auto;            
+  background-color:#b2aeae;
+}
+#main #nav #navleft #logo svg{
+    height: auto;
+    width: 100px;
+}
+#final{
+    display: flex;
+    flex-wrap: wrap;
+}
+#final .card {
+    margin: 30px 20px;
+    height: 300px;
+    width: 450px;
+    position: relative;
+    transition: all ease 0.3s;
+
+    overflow: hidden;
+}
+#final .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+
+}
+#final .card .box{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: -50%;
+    background-color: black;
+    border-radius: 12px;    
+}
+
+#final .card .box .ri-bookmark-line{
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    color: black;
+}
+#final .card .box .ri-heart-line{
+    position: absolute;
+    bottom: 10%;
+    right:7%;
+    padding: 12px 12px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+
+}
+
+#final .card:hover .box{
+    background:linear-gradient(transparent,rgb(53, 51, 51));
+    bottom: 0%;
+}
+
+#final .card .box i:hover{
+    color: #b2aeae;
+    cursor: pointer;
+}
