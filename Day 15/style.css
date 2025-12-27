@@ -89,6 +89,7 @@ main::-webkit-scrollbar{
 }
 .bottom i:hover{
   color: lightgrey;
+  cursor: pointer;
 }
 
 main h1{
