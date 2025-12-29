@@ -1,0 +1,217 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+               'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 200px repeat(16,300px) ;
+
+
+  grid-template-areas:
+    "header header"
+    "section1 section1"
+    "figure1 figure1"
+    "figure1 figure1"
+    "section3 section3"
+    "aside1 figure2"
+    "aside1 figure2"
+    "section2 section2"
+    "figure3 figure3"
+    "figure3 figure3"
+    "figure4 aside2"
+    "figure4 aside2"
+    "aside3 figure5"
+    "aside3 figure5"
+    "aside4 figure6"
+    "aside4 figure6"
+    "footer footer";
+}
+/* 
+main > *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+} */
+
+header {
+  background-color: teal;
+  grid-area: header;
+  color: white;
+}
+
+footer {
+  background-color: #f1c40f;
+  grid-area: footer;
+}
+
+.section1 {
+  background-color: mediumpurple;
+  grid-area: section1;
+  color: white;
+}
+
+.section2 {
+  background-color: aqua;
+  grid-area: section2;
+}
+.section3{
+    background-color: azure;
+    grid-area: section3;
+}
+.figure1 {
+  grid-area: figure1;
+}
+
+.figure2 {
+  background-color: purple;
+  grid-area: figure2;
+  color: white;
+}
+
+.figure3 {
+  background-color: orange;
+  grid-area: figure3;
+}
+
+.figure4 {
+  background-color: navy;
+  grid-area: figure4;
+  color: white;
+}
+
+.figure5 {
+  background-color: royalblue;
+  grid-area: figure5;
+  color: white;
+}
+
+.figure6 {
+  background-color: khaki;
+  grid-area: figure6;
+}
+
+.aside1 {
+  background-color: gold;
+  grid-area: aside1;
+}
+
+.aside2 {
+  background-color: honeydew;
+  grid-area: aside2;
+}
+
+.aside3 {
+  background-color: yellowgreen;
+  grid-area: aside3;
+}
+
+.aside4 {
+  background-color: salmon;
+  grid-area: aside4;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    font-size: 20px;
+    align-items: center;
+}
+header #left{
+    color: black;
+    font-weight: bolder;
+    padding-left: 100px;
+}
+header #center{
+    padding-left: 80px;
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color:grey;
+}
+
+header #right{
+    display: flex;
+    gap: 20px;
+}
+header #right button{
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+header #right #first{
+    background-color: transparent;
+    color: rgb(3, 178, 242);
+    border: 1px solid rgb(3, 178, 242);
+}
+header #right #second{
+    background-color: rgb(3, 178, 242);
+    color: white;
+    border: none;
+}
+
+/* Section 1 */
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color:white;
+    color: black;
+    
+}
+.section1 #leftsection1{
+    padding-left: 40px;
+    width: 400px;
+    font-weight: 400;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.section1 #rightsection1{
+    width: 800px;
+}
+.section1 #rightsection1 p{
+    padding-bottom: 30px;
+}
+.section1 #rightsection1 button{
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+.section1 #rightsection1 #A{
+    background-color: rgb(3, 178, 242);
+    color: white;
+    border: none;
+}
+.section1 #rightsection1 #B{
+    background-color: transparent;
+    color: rgb(3, 178, 242);
+    border: 1px solid rgb(3, 178, 242);
+}
+
+/* Figure 1 */
+
+.figure1{
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://img.freepik.com/premium-photo/flat-design-two-office-employees-talking-office-desk_940725-1025.jpg?w=2000);
+}
