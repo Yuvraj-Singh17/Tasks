@@ -26,10 +26,10 @@ main {
     "section1 section1"
     "figure1 figure1"
     "figure1 figure1"
-    "section3 section3"
-    "aside1 figure2"
-    "aside1 figure2"
     "section2 section2"
+    "aside1 figure2"
+    "aside1 figure2"
+    "section3 section3"
     "figure3 figure3"
     "figure3 figure3"
     "figure4 aside2"
@@ -211,7 +211,55 @@ header #right #second{
 /* Figure 1 */
 
 .figure1{
-    background-size: cover;
-    background-position: center;
-    background-image: url(https://img.freepik.com/premium-photo/flat-design-two-office-employees-talking-office-desk_940725-1025.jpg?w=2000);
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figure1 img{
+  background-color: pink;
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+/* Section 2 */
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+
+  background-color: white;
+}
+.section2 h1{
+  font-size: 80px;
+  font-weight: 400;
+}
+.section2 p{
+  width: 150px;
+  color: rgb(150, 150, 150)
+  ;
+}
+
+/* Aside 1 */
+.aside1{
+  background-color: rgb(215, 215, 215);
+}
+
+/* figure 2 */
+.figure2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 215, 215);
+}
+.figure2 img{
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 12px;
 }
