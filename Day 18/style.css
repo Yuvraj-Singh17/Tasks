@@ -18,7 +18,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 200px repeat(16,300px) ;
+    grid-template-rows: 80px 200px repeat(6,300px) 750px repeat(10,300px);
 
 
   grid-template-areas:
@@ -32,6 +32,7 @@ main {
     "section3 section3"
     "figure3 figure3"
     "figure3 figure3"
+    "section4 section4"
     "figure4 aside2"
     "figure4 aside2"
     "aside3 figure5"
@@ -248,8 +249,36 @@ header #right #second{
 /* Aside 1 */
 .aside1{
   background-color: rgb(215, 215, 215);
+  position: relative;
 }
-
+.aside1 button{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  top: 5%;
+  left: 10%;
+}
+.aside1 #d{
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.aside1 #d h3{
+  font-size: 45px;
+  padding-bottom: 30px;
+  width: 600px;
+  font-weight: 400;
+}
+.aside1 #d p{
+  width: 650px;
+  font-size: 23px;
+  color: grey;
+}
 /* figure 2 */
 .figure2{
   display: flex;
@@ -262,4 +291,218 @@ header #right #second{
   width: 90%;
   object-fit: cover;
   border-radius: 12px;
+}
+
+/* section3 */
+.section3{
+  position:relative;
+  background-color: white;
+}
+.section3 button{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  top: 30%;
+  left: 3%;
+}
+.section3 #innerSection3{
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.section3 #innerSection3 h3{
+  font-size: 45px;
+  width: 600px;
+  font-weight: 400;
+}
+.section3 #innerSection3 p{
+  width: 650px;
+  font-size: 18px;
+  color: grey;
+}
+
+/* figure 3 */
+.figure3 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 24px;
+  padding: 40px;
+}
+.figure3 .cards {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background-color: mediumspringgreen;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+}
+
+/* section 4 */
+
+.section4{
+  position:relative;
+  background-color: white;
+}
+.section4 button{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  top: 30%;
+  left: 5%;
+}
+.section4 #innerSection4{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.section4 #innerSection4 h3{
+  font-size: 45px;
+  width: 600px;
+  font-weight: 400;
+}
+.section4 #innerSection4 p{
+  width: 650px;
+  font-size: 18px;
+  color: grey;
+}
+
+/* Aside 2 */
+.aside2{
+  background-color: white;
+}
+.aside2 #first{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #00a6ff;
+}
+.aside2 #first #firstinner h6{
+  padding-bottom: 20px;
+  color: #00a6ff;
+  font-size: 15px;
+}
+.aside2 #first #firstinner h3{
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+.aside2 #first #firstinner p{
+  color: grey;
+  width: 600px;
+}
+.aside2 #first #firstinner button{
+  padding-top: 20px;
+  color: black;
+  border: none;
+  background: transparent;
+}
+.aside2 #first i{
+  height: 40px;
+  width: 40px; 
+  font-size: 20px;
+  padding: 10px 10px;
+  color: white;
+  background-color: #00a6ff;
+  border-radius: 50%;
+}
+
+.aside2 .second{
+  display: flex;
+  gap: 30px;
+  padding-left: 42px;
+  padding-bottom: 50px;
+}
+
+.aside2 .second i{
+  height: 40px;
+  width: 40px; 
+  font-size: 20px;
+  padding: 10px 10px;
+  color: white;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+.aside2 .second #secondinner h6{
+  color: lightgray;
+  font-size: 15px;
+}
+
+.aside2 .second #secondinner h3{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+/* Aside3 */
+
+.aside3{
+  background-color: white;
+}
+.aside3 #upper{
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+}
+.aside3 #upperleft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 22px;
+} 
+.aside3 #upperleft i{
+  font-size: 30px;
+}
+.aside3 #upperright i{
+  font-size: 25px;
+  color: #00a6ff;
+}
+
+
+.aside3 #lower{
+  margin-top: 70px;
+  font-size: 22px;
+  width: 600px;
+  padding-left: 100px;
+}
+
+.aside3 #lowest{
+  display: flex;
+  gap: 40px;
+  padding-top: 40px;
+  padding-left: 105px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.aside3 #lowest h4{
+  font-weight: 400;
 }
