@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(black, white, black);
+  position: relative;
+}
+
+/* Only required elements absolute */
+h1, #inc, #dc, #all {
+  position: absolute;
+}
+
+h1{
+    top: 25%;
+    left: 48%;
+    font-size: 100px;
+    color: white;
+    transform: translateX(-50%);
+}
+
+#inc{
+    top: 50%;
+    left: 35%;
+}
+
+#dc{
+    top: 50%;
+    right: 35%;
+}
+
+#all{
+    top: 85%;
+    left: 5%;
+}
+
+/* common button styling */
+button{
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#inc:hover, #dc:hover{
+    background: black;
+    color: white;
+}
+
+#all{
+    border: 2px solid white;
+    color: white;
+}
+
+#all:hover{
+    background: white;
+    color: black;
+}
+#back {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#back:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
