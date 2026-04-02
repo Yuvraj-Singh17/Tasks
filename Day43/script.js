@@ -48,6 +48,28 @@ var arr = [
         color:"orange",
         text:"black"
     },
+    {
+        team:"DC",
+        captain:"Axar Patel",
+        tagline:"Roar Macha",
+        color:"#1253A1",
+        text:"white"
+    },
+    {
+        team:"LSG",
+        captain:"Rishabh Pant",
+        tagline:"Roar Macha",
+        color:"linear-gradient(to right , red , blue)",
+        text:"white"
+    },
+    {
+        team:"RR",
+        captain:"Riyan Parag",
+        tagline:"Halla Bol",
+        color:"linear-gradient(to bottom , blue , pink)",
+        text:"white"
+    },
+
 ]
 
 var div = document.querySelector("#box")
@@ -55,9 +77,12 @@ var btn = document.querySelector("button")
 var main = document.querySelector("main")
 var h1 = document.querySelector("h1")
 var details = document.querySelector("#details")
+var logo = document.querySelector("#logo")
+var year = document.querySelector("#y")
+
+let a = 2026;
 
 btn.addEventListener('click', function(){
-
     var winner = arr[Math.floor(Math.random()*arr.length)]
 
     h1.innerHTML = winner.team
@@ -66,15 +91,20 @@ btn.addEventListener('click', function(){
     main.style.backgroundSize = "cover"
     main.style.backgroundPosition = "center"
     main.style.backgroundRepeat = "no-repeat"
+    year.innerHTML = a;
+    year.style.color = winner.text
 
+    logo.style.backgroundImage = `url("./TeamLogo/${winner.team}.png")`
     div.style.background = winner.color
     details.style.color = winner.text
     h1.style.color = winner.text
     h1.style.fontWeight = 700
     details.style.fontWeight = 500
+    h1.style.fontSize = "150px"
 
     details.innerHTML = `
         Captain: ${winner.captain} <br>
         Tagline: ${winner.tagline}
     `
+    a = a + 1;
 })

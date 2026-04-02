@@ -29,10 +29,22 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 10px;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.2);
     color: white;
+}
+#logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;   /* makes circle */
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    background-image: url("./Trophy_Image/image.png");
 }
 button{
     padding: 10px 40px;
