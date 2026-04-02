@@ -18,9 +18,10 @@ main{
     justify-content: center;
     gap : 30px;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
 }
 #box{
-    background: rgba(255, 255, 255, 0.1); /* transparent */
+    background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     height: 40rem;
@@ -37,7 +38,7 @@ main{
 #logo {
     height: 120px;
     width: 120px;
-    border-radius: 50%;   /* makes circle */
+    border-radius: 50%;
     background-color: white;
     background-size: cover;
     background-position: center;
